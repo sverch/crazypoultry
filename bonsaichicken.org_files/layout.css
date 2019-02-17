@@ -1,0 +1,327 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+#main-headling {
+   line-height: 24px;
+   padding: 20px 0 0 0;
+   padding: 20px 0 0 0;
+   margin: 0;
+   }
+
+#main-headling a {
+    color:#87AFD7;
+    font-family: Noticia, Deja Vu Sans, Bitstream Vera Sans;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#main-headling a:hover {
+    color: #fff;
+}
+
+#sub-headling {
+    color:#888;
+    font-family: Noticia, Deja Vu Sans, Bitstream Vera Sans;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#sidebar {
+    position: fixed;
+    width:160px;
+}
+
+#sidebar h5{
+    font-size: 14px;
+    color: #9f9f9f
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#content {
+    float: right;
+    padding-top: 40px;
+}
+
+div.header, div.navigation { height: 25px; margin-bottom: 42px; }
+div.navigation ul { margin: 0; padding: 0; list-style: none; }
+div.navigation ul li { display: inline; margin: 0 2px; padding: 0;}
+div.body { clear: both; }
+
+div.social { padding-top: 20px; padding-bottom: 10px;}
+div.social a { color: #888; text-decoration: none;}
+div.social ul { margin: 0; padding: 0; list-style: none; }
+div.social ul li { display: inline; margin: 0 2px; padding: 0; }
+
+div.separator               {
+    border-bottom: 1px solid #afd787;
+    margin-bottom: 22px;
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+}
+
+.old-list h1 {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0px;
+    padding-left: 20px;
+}
+
+li i:hover {color: #fff;}
+
+/* margins and stuff */
+p, div.line-block, ul, ol, pre,
+    table                       { margin: 25px 0 25px 0; }
+dt                              { margin: 25px 0 16px 0; padding: 0; }
+dd                              { margin: 16px 0 25px 40px; padding: 0; }
+ul ol, ol ul, ul ul, ol ol      { margin: 10px 0; padding: 0 0 0 40px; }
+li                              { padding: 0; }
+h2 + div.date                     { margin-top: -10px; font-style: italic; }
+
+/* code formatting.  no monospace because of webkit (bug?) */
+pre, code { font-family: 'Consolas', 'Deja Vu Sans Mono',
+                  'Bitstream Vera Sans Mono', 'Monaco', 'Courier New';
+                  font-size: 0.85em;
+                }
+pre {
+    /*[>line-height: 1.3;<] border: 1px solid #ddd; padding: 10px;*/
+    margin: 15px 0 15px 0;
+    padding: 10px;
+    overflow: auto;
+    /* background: #fafafa; */
+    color: #ededf2;
+    background-color: #343434 !important;
+    /*background-color: ghostWhite;*/
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+}
+code { background: #eee; }
+
+/* tables */
+table { border: 1px solid #ddd; border-collapse: collapse;
+                  background: #fafafa; }
+td, th { padding: 2px 12px; border: 1px solid #ddd; }
+
+/* footnotes */
+table.footnote          { margin: 15px 0; background: transparent; border: none; }
+table.footnote td       { border: none; padding: 9px 0 0 0; font-size: 15px; }
+table.footnote td.label { padding-right: 10px; }
+table.footnote td p     { margin: 0; }
+table.footnote td p + p { margin-top: 15px; }
+
+/* blog overview */
+
+article {
+    color: #9f9f9f;
+    background-color: #2c2e2e;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    /*font-weight:bold;*/
+    /*text-transform:uppercase;*/
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+}
+
+/*article h1,*/
+/*article div.summary,*/
+article div.summary p {
+  line-height: 15px;
+  margin: 0px;
+  }
+
+/*div.entry-overview h1               { margin: 0; font-size: 20px; }*/
+/*div.entry-overview div.summary,*/
+
+/*div.entry-overview div.date,*/
+
+article h1 a {
+    text-decoration: none;
+}
+
+article div.date
+{
+    color: #888;
+    font-style: italic;
+}
+
+#last-article h1{
+    font-size: 24px;
+    font-variant: uppercase;
+}
+/*div.entry-overview h1:after         {*/
+/*content: " —";*/
+/*}*/
+
+li {
+list-style: none;
+}
+
+
+/*LI { display: block }*/
+/*LI:before { content: counter(item) " "; counter-increment: item }*/
+
+/* other alignment things */
+img.align-center        { margin: 15px auto; display: block; }
+
+/* pagination */
+div.pagination          { margin: 36px 0 0 0; text-align: center; }
+div.pagination strong   { font-weight: normal; font-style: italic; }
+
+/* tags */
+p.tags          { text-align: right; font-style: italic; }
+ul.tagcloud     { font-size: 16px; margin: 36px 0; padding: 0;
+                  list-style: none; }
+ul.tagcloud li  { margin: 0; padding: 0 10px; display: inline; }
+li.tag-1           {font-size: 100.0%;}
+li.tag-2           {font-size: 130.0%;}
+li.tag-3           {font-size: 160.0%;}
+li.tag-4           {font-size: 200.0%;}
+
+li.tag-1 a           {color: #afdfdf;}
+li.tag-2 a           {color: #d7afd7;}
+li.tag-3 a           {color: #df8787;}
+li.tag-4 a           {color: #afdf87;}
+
+/* latex math */
+span.math img   { margin-bottom: -7px; }
+
+div.blog-epilogue           { margin-top: 100px; font-size: 19px; text-align: center;}
+div.blog-epilogue a         {text-decoration: none;
+                             padding-left: 30px; padding-right: 30px;}
+
+footer{
+    /*border-top: 1px dotted #ddd;*/
+    padding-top: 40px;
+    margin-top: 42px;
+    font-size: 9px;
+    color: #888;
+}
+
+footer a{ color: #888; }
+footer p{ margin: 0; }
+
+/* about img */
+img.align-left {
+    float: left;
+    margin: 20px;
+}
+
+/* github gists */
+.gist{
+  margin: 15px 0 !important;
+}
+
+.gist-file{
+  border: none !important;
+}
+
+.gist-meta{
+  height: 17px !important;
+  border: 1px solid #D2d2d2 !important;
+  padding-top: 1px !important;;
+  /*padding: 0px !important;*/
+  -moz-border-radius-bottomleft: 10px !important;
+  -webkit-border-bottom-left-radius: 10px !important;
+  -moz-border-radius-bottomright: 10px !important;
+  -webkit-border-bottom-right-radius: 10px !important;
+  font-size: 0.50em !important;
+
+}
+
+.gist-data{
+  padding: 5px !important;
+  border: 1px solid #D2d2d2 !important;
+  border-bottom: none !important;
+  -moz-border-radius-topleft: 10px !important;
+  -webkit-border-top-left-radius: 10px !important;
+  -moz-border-radius-topright: 10px !important;
+  -webkit-border-top-right-radius: 10px !important;
+  font-size: 0.85em !important;
+}
+
+/* #Page Styles
+================================================== */
+
+h2.archive-year {
+    color: #8cd0d3;
+}
+
+h3.archive-month6{
+    color: #888;
+    font-style: italic;
+}
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+    }
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+        #sidebar {position: relative;}
+    }
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+            #sidebar {position: relative;}
+    }
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
